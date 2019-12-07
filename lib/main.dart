@@ -42,7 +42,7 @@ class Ipod extends StatefulWidget {
 }
 
 class _IpodState extends State<Ipod> {
-  final PageController _pageController = PageController(viewportFraction: 0.6);
+  final PageController _pageController = PageController(viewportFraction: 0.8);
   double _currentPage = 0.0;
   static const double RADIUS = 150.0;
   @override
@@ -113,7 +113,7 @@ class _IpodState extends State<Ipod> {
                             duration: Duration(milliseconds: 200));
                       },
                       child: Container(
-                        padding: EdgeInsets.all(16),
+                        padding: EdgeInsets.all(32),
                         alignment: Alignment.centerRight,
                         child: Icon(
                           Icons.fast_forward,
@@ -128,7 +128,7 @@ class _IpodState extends State<Ipod> {
                             duration: Duration(milliseconds: 200));
                       },
                       child: Container(
-                        padding: EdgeInsets.all(16),
+                        padding: EdgeInsets.all(32),
                         alignment: Alignment.centerLeft,
                         child: Icon(
                           Icons.fast_rewind,
@@ -137,7 +137,7 @@ class _IpodState extends State<Ipod> {
                       ),
                     ),
                     Container(
-                      padding: EdgeInsets.all(16),
+                      padding: EdgeInsets.all(32),
                       alignment: Alignment.topCenter,
                       child: Text(
                         "Menu",
@@ -146,7 +146,7 @@ class _IpodState extends State<Ipod> {
                       ),
                     ),
                     Container(
-                      padding: EdgeInsets.all(16),
+                      padding: EdgeInsets.all(32),
                       alignment: Alignment.bottomCenter,
                       child: Icon(
                         Icons.play_arrow,
@@ -158,8 +158,8 @@ class _IpodState extends State<Ipod> {
               ),
             ),
             Container(
-              width: 150,
-              height: 150,
+              width: 100,
+              height: 100,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 color: Colors.grey,
